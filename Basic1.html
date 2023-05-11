@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>Basic 1 HTML</title>
+            <!-- css ingot import cheyunnath ann -->
+            <link rel="stylesheet" href="filename.css">
+      </head>
+      <body>
+
+<!-- Heading There are 6 types it contains only in "h" tag -->
+
+            <h1>Aron Jose</h1>
+            <h2>Aron Jose</h2>
+            <h3>Aron Jose</h3>
+            <h4>Aron Jose</h4>
+            <h5>Aron Jose</h5>
+            <h6>Aron Jose</h6>
+            <!-- In HTML we can include a paragraph so we add "p" tag,"br"tag are ues to next line ,the "b" tag are using bold a letter or words-->
+            <p><b>Russia</b> has suffered more than 
+                  <br>100,000 casualties since December, <br>according to new estimates announced by the Biden administration on May 1st.</p>
+
+      <!-- <small></small> -- using small size test -->
+      <!-- <mark></mark>  -- using mark that word -->
+      <!-- <del></del>--it indicate that this word is deleted -->
+      <!-- <ins></ins> --- It indicate that this word is incerted to identify in this word contain a line under -->
+
+<!-- Super Script -->
+
+            <p>a<sup>2</sup>+b<sup>2</sup>=a<sup>2</sup>+2ab+b<sup>2</sup></p> <!--it is used for square model implementation top-->
+<!-- subScript -->
+            <p>H<sub>2</sub>O</p> <!--it is used to lower part like square bottom -->
+
+<!-- HTML TABLES -->
+
+            <table style="width: 100%;" border="1">
+                  <!-- "caption" it is the table heading -->
+             <caption>Table</caption>
+             <!-- "tr" it is the table row -->
+             <!-- "colsepan" used to merge coloums into a single long coloum -->
+             <tr colspan="2">
+                  <!-- "th" table heading -->
+                  <!-- "rowspan is same as the colsepan" -->
+                  <th rowspan="3"></th>
+
+                  <tr>
+                        <!-- "td" table data -->
+                        <td></td>
+                  </tr>
+             </tr>
+            </table>
+
+ <!-- IMAGE UPLOADING  -->
+
+            <!-- We want to add a link So we are using "a" tag and "href" to import the website adress -->
+            <a href="https://www.google.com/"> google</a> 
+            <!-- "target" used to implement into a new window on the browser -->
+            <a href="https://www.google.com/" target="_blank"> google</a> 
+            <!-- image add "img src=" ,"alt" attribute is describe the photo onece it can't load -->
+            <img src="" alt="">
+
+      <!-- Oru single image different link part akkam  -->
+            <!-- "usemap" used for naming the image -->
+            <img src="image name" alt="description" usemap="#image">
+            <!-- "map" attribute used to implement mapping -->
+            <map name="image"> <!-- To connect a image and  the maping part-->
+                  <area shape="rect" coords="0,0,100,100" herf="adress"> <!--"shape" is the shape of that and "coords" is the coordinates-->
+            </map>
+
+<!-- Devision Element -- it is used for creating a sections-->
+            <div>
+                  <!-- it contans induvidual part -->
+            </div>
+            <div>
+                  <!-- another section -->
+            </div>
+
+<!-- HTML class -->
+            <h1 class="classname"></h1>
+             <!--css ezhuthumbol ".classname{}" enn kodukkanam,Multiple class undel same class="classname1 classname2"-->
+
+<!-- HTML ID attribute -->
+            <h1 id="idname"></h1> <!-- "ID" is uniqe it doesnot repeated,id is also used to css it contain "#idname{}"-->
+
+<!-- HTML List -->
+      <!-- There are two types of list one is ordered list(eg:1,2,3 or a,b,c) and other one is unordered list(eg:bullets and dotes..) -->
+      <!-- unoreded List using "ul" tag -->
+            <ul>
+                  <li>aron1</li>
+                  <li>aron2</li>
+            </ul>
+      <!-- ordered list using "ol" tag -->
+            <ol>
+                  <li>aron1</li>
+                  <li>aron2</li>
+            </ol>
+            
+<!-- I Frame  -->
+      <!-- used to add another web page in our web page -->
+            <iframe src="contact.htm or url"></iframe> <!-- "iframe" tag akath nammak "src" tag use cheyth another webpage add akkam ,link or file name kodutha mathy-->
+
+
+<!-- HTML FORMS -- it is uesed for inpute the user informations -->
+
+            <form>
+                  <label for="username">Name</label> <!-- "label" tag used to labeled anything in the form "for" tag is used to dfined ethinulla label ann enn-->
+                  <input type="text" name="username" id="username">
+                  <br>
+                  <label for="password">password</label>
+                  <input type="password" name="password" id="password">
+                  <!-- Button -->
+                  <br>
+                  <input type="submit" value="Submit">
+
+                  <!--Radio Button -->
+                  <input type="radio" name="gender" id="Male">
+                  <label for="Male">Male</label>
+                  <input type="radio" name="gender" id="Female">
+                  <label for="Female">Female</label>
+
+                  <!-- Checkbox -->
+                  <input type="checkbox" name="name" id="name">
+                  <label for="name">Checkbox</label>
+
+                  <!-- Dropedown -->
+                  <label for="state">State</label>
+                  <select name="state" id="state">
+                        <option value="kerala">kerala</option>
+                        <option value="kerala">kerala</option>
+                  </select>
+
+                  <!-- Textarea for Address Typing -->
+                  <label for="address">Address</label>
+                  <textarea name="address" id="address" cols="30" rows="10"></textarea>
+
+                  <!-- file Upload or Image Upload -->
+                  <label for="file">file</label>
+                  <input type="file" name="file" id="file">
+
+                  <!-- Button Element used  -->
+                  <button type="button" class="btn">
+                        <img src="filename" alt="define" >
+                  </button>
+
+                  <!-- Add Vedios  -->
+                  <video controls autoplay><!--"controls" used to play only the vedios in the webpage ,"autoplay" used to play automaticaly-->
+                        <source src="filemname" type="vedio/mp4">
+                  </video>
+
+                  <!-- audio adding -->
+                  <audio controls>
+                        <source src="file">
+                  </audio>
+
+            </form>
+      </body>
+</html>

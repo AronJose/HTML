@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>    
+        <style type="text/css">    
+            body{    
+                font-family: Calibri;    
+            }    
+            input[type="text"] {    
+                width: 250px;    
+            }    
+            input[type="submit"], input[type="reset"] {    
+                width: 77px;    
+                height: 27px;    
+                position: relative;left: 180px;    
+            }    
+            form{    
+                text-align: center;    
+                font-family: Calibri;    
+                font-size: 20px;    
+                border: 3px solid black;    
+                width: 600px;    
+                margin: 20px auto;    
+            }    
+            td {    
+                padding: 10px;    
+            }    
+            td:first-child {    
+                text-align: right;    
+                font-weight: bold;    
+            }    
+            td:last-child {    
+                text-align: left;
+                }    
+       
+        </style> 
+        <script type="text/javascript" ></script>   
+</head>
+<body>
+      
+      <script>
+            function Registration()
+            {
+                  var firstname=document.forms["Registrationform"]["firstname"]
+                  var lastname=document.forms["Registrationform"]["lastname"]
+                  var username=document.forms["Registrationform"]["username"]
+                  var password=document.forms["Registrationform"]["password"]
+                  var confirmpassword=document.forms["Registrationform"]["password"]
+                  var email=/^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/g; 
+                  var pincode=document.forms["Registrationform"]["email"]
+                  if(firstname.value=="")
+                  {    
+                  window.alert("Please enter your first name:");
+                  firstname.focus();
+                  return false;
+                  } 
+
+                  if(lastname.value=="")
+                  {    
+                  window.alert("Please enter your last name:");
+                  lastname.focus();
+                  return false;
+                  }
+                  if(username.value=="")
+                  {    
+                  window.alert("Please enter your username:");
+                  username.focus();
+                  return false;
+                  }
+                  if(username.value.length>=5 && username.value.length<=10) 
+                  { 
+                        return true;
+                  }
+                  else
+                  { 
+                  window.alert("Please enter your userid not between 5-10");
+                  userid.focus();
+                  return false;
+                  }
+                  
+                  if(username.value.match(/^[0-9a-zA-Z]+$/))
+                  {  
+                  return true;
+                  }
+                  else
+                  {  
+                  window.alert("Please enter a valid username:");
+                  username.focus();
+                  return false;
+                  }
+                  // if(username.value.match(/^[1-9]+$/))
+                  // { 
+                  // return true;
+                  // }
+                  // else
+                  // {   
+                  // window.alert("Please enter a valid username:");
+                  // username.focus();
+                  // return false;
+                  // }
+                  let x = document.forms["Registrationform"]["username"].value;
+                  if (x == "") {
+                  alert("Name must be filled out");
+                  return false;
+                  }
+                  
+                  if(password.value=="")
+                  {    
+                  window.alert("Please enter your password:");
+                  password.focus();
+                  return false;
+                  }
+                  if(confirmpassword.value!=password.value)
+                  {    
+                  window.alert("Please re enter your password:");
+                  password.focus();
+                  return false;
+                  }
+                  
+                  if(email.value=="")
+                  {    
+                  window.alert("Please enter your email:");
+                  email.focus();
+                  return false;
+                  }
+                  if (email == "" || !email.test(email)) {
+                  window.alert("Please enter a valid e-mail address.");
+                  email.focus();
+                  return false;
+                  }  
+
+                  if(pincode.value=="")
+                  {    
+                  window.alert("Please enter your pincode:");
+                  pincode.focus();
+                  return false;
+                  }
+
+            }
+            
+      </script>
+      <form name="Registrationform" onsubmit="return Registration()" method="post">
+<center>
+<h1>Registration</h1> 
+<table>
+<tr>
+    <td align='center'>First Name</td>
+    <td><input type='text' name='firstname'></td>
+</tr>
+<tr>
+    <td align='center'>Last Name</td>
+    <td><input type='text' name='lastname'></td>
+</tr>
+<tr>
+    <td align='center'>Username</td>
+    <td><input type='text' name='username' onsubmit=""></td>
+</tr>
+<tr>
+    <td align='center'>password</td>
+    <td><input type='password' name='password'></td>
+</tr>
+<tr>
+    <td align='center'>confirm password</td>
+    <td><input type='password' name='confirmpassword'></td>
+</tr>
+<tr>
+    <td align='center'>Email</td>
+    <td><input type='text' name='email'></td>
+</tr>
+<tr>
+    <td align='center'>pincode</td>
+    <td><input type='number' name='pincode'></td>
+</tr>
+<tr>
+    <td align='center'><input type='submit' name='register' value="Register"></td>
+</tr>
+</table>
+</center>
+</form>
+</body>
+</html>
+
+  
